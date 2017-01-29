@@ -1,4 +1,4 @@
-HDHacker version 1.4
+HDHacker version 1.5
 
 
 Updated versions are found at the following Link:
@@ -63,16 +63,16 @@ HDHacker requires MSVBVM60.DLL, to run in Windows 95 or Windows 98.
 (Hint: MSVBVM60.DLL is a standard file component in Windows 2000)
 
 
-
 NOTES:
 
 The program uses the technology UPX (http://upx.sourceforge.net) to increase its size efficiency/portability.
 
 
-
 LICENSE:
 
 The program is distributed with a Freeware license (please read license regarding restrictions for use, credits, prohibition against decompiling, and limitations of damage).
+
+
 
 CODE AUTHOR/CREATOR:
 

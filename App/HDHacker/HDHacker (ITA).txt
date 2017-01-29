@@ -1,7 +1,7 @@
-HDHacker v1.4
+HDHacker v1.6
 ~~~~~~~~~~~~~
 
-La versione aggiornata si trova ai seguenti Link:
+La versione aggiornata si trova al seguente Link:
 
 Home:   "http://dimio.altervista.org/"
 
@@ -45,13 +45,36 @@ Mentre per ripristinarlo i passaggi saranno:
 Il programma funziona solamente se si è "Administrator", infatti richiede che l'utente abbia i permessi di lettura/scrittura in qualsiasi parte del disco.
 
 Ovviamente, se l'MBR/BootSector vengono danneggiati, Windows non riuscirà ad avviarsi ed è quindi impossibile utilizzare HDHacker per ripristinare lo stato precedente.
-Per evitare questo inconveniente, nella maggior parte dei casi, è possibile creare preventivamente un disco di emergenza che consente di avviare Windows anche con un MBR/BootSector danneggiato (http://support.microsoft.com/kb/314079), una volta fatto questo si potrà utilizzare HDHacker per ripristinare l'MBR/BootSector salvati precedentemente.
+In questa situazione si può utilizzare una Live di Windows avviabile da CD o da Chiavetta USB che permetta di far funzionare HDHAcker. Personalmente consiglio l'ottimo Hiren's Boot CD che integra HDHacker tra le varie utilities.
+In alternativa è possibile creare preventivamente un disco di emergenza che consente di avviare Windows anche con un MBR/BootSector danneggiato (http://support.microsoft.com/kb/314079), una volta fatto questo si potrà utilizzare HDHacker per ripristinare l'MBR/BootSector salvati precedentemente.
 
 
 ALTRE OPZIONI:
 ~~~~~~~~~~~~~~
 
 Volendo è possibile specificare la posizione specifica del settore che si vuole andare a leggere. E' anche possibile leggere più settori contigui di seguito fino ad un massimo di 16, ciò può essere utile in quei casi in cui ci si trovi ad aver a che fare con MBR particolarmente grandi che occupano più di un settore.
+
+
+LINEA DI COMANDO:
+~~~~~~~~~~~~~~~~
+
+Sono disponibili quattro combinazioni di parametri da usarsi con la linea di comando, essi servono rispettivamente per leggere o scrivere su disco un dato numero di settori e salvarli/leggerli a loro volta in un file.
+
+/SAVELogicalOnFile Drive Filename StartSector SectorCount
+
+Per salvare un dato numero di settori di un'unità logica su di un file.
+
+/SAVEPhysicalOnFile NumDrive Filename StartSector SectorCount
+
+Per salvare un dato numero di settori di un'unità fisica su di un file.
+
+/SAVEFileOnLogical FileName StartSector Drive
+
+Per salvare il contenuto di un file su di un drive logico a partire dal settore indicato.
+
+/SAVEFileOnPhysical FileName StartSector NumDrive
+
+Per salvare il contenuto di un file su di un drive fisico a partire dal settore indicato.
 
 
 COMPATIBILITA':
@@ -73,7 +96,8 @@ Il programma utilizza la tecnologia UPX (http://upx.sourceforge.net/) per aument
 LICENZA:
 ~~~~~~~~
 
-Il programma viene distribuito con la licenza Freeware.
+Il programma viene distribuito con la licenza Freeware. 
+Questo, tradotto in due parole, significa: il software è gratuito e potete usarlo come vi pare, anche integrarlo in pacchetti commerciali se volete. Le uniche cose che non sono permesse sono la decompilazione e la modifica dei sorgenti.
 
 
 
